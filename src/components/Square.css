@@ -1,0 +1,20 @@
+.squareCard{
+    height: 150px;
+    width: 150px;
+    border-radius: 9px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 0;
+    margin: 0 0 50px 0;
+}
+
+.selected{
+    background-color: transparent;
+    border: 5px solid #710E92;
+}
+
+.unselected{
+    background-color: #710E92;
+    border: 5px solid #710E92;
+}

@@ -1,0 +1,14 @@
+.navbar{
+    background-color: #710E92;
+}
+.navText{
+    color: white;
+}
+
+.gridContainer {
+  height: calc(100vh - 70px); 
+  width: 100%;
+  display: flex;
+  align-items: center;       
+  justify-content: center;   
+}
