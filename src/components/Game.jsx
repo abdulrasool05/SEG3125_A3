@@ -20,7 +20,7 @@ export default function Game({
   const [hasLost, setHasLost] = useState(false);
   const [isPreviewing, setIsPreviewing] = useState(false);
   const [preventClick, setPreventClick] = useState(true);
-  const { width, height } = { width: 1800, height: 1080 };
+  const { width, height } = { width: 1800, height: 980 };
 
   const ALPHABET_ARRAY = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
