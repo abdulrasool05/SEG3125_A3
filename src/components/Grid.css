@@ -1,3 +1,7 @@
+* {
+    font-family: "Inter", sans-serif !important;
+}
+
 .gridContainer{
     max-width: 800px !important;
     margin: 0;

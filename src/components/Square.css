@@ -1,10 +1,14 @@
+* {
+    font-family: "Inter", sans-serif !important;
+}
+
 .squareCard{
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
     border-radius: 9px;
     font-family: Poppins;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 60px;
     padding: 0;
     margin: 0 0 50px 0;
 }
@@ -12,17 +16,40 @@
 .selected{
     background-color: transparent;
     border: 5px solid #710E92;
+    transition: all 0.5s;
+    transform: scale(1.25) perspective(10px);
 }
 
 .correctSquare{
-    border-color:green !important ;
+    border-color: #439800 !important ;
+    transition: all 0.5s;
 }
 
 .incorrectSquare{
-    border-color: red !important;
+    border-color: #af0000 !important;
+    transition: all 0.5s;
 }
 
 .unselected{
     background-color: #710E92;
     border: 5px solid #710E92;
+    transition: all 0.5s;
+}
+
+.unselected:hover {
+    background-color: rgb(145, 19, 187);
+    border: 5px solid rgb(145, 19, 187);
+    transform: scale(1.1) perspective(10px);
+}
+
+.unselected--correct {
+    background-color: #439800 !important ;
+    border-color: #027200 !important;
+    transition: all 0.5s;
+}
+
+.unselected--wrong {
+    background-color: #af0000 !important ;
+    border-color: #af0000 !important;
+    transition: all 0.5s;
 }

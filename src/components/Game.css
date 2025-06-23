@@ -1,14 +1,41 @@
+* {
+    font-family: "Inter", sans-serif !important;
+}
+
+
 .navbar{
     background-color: #710E92;
+    height: 150px;
 }
 .navText{
     color: white;
+    font-size: 50px;
+}
+
+.navbar--correct {
+  background-color: #439800 !important;
+  transition: all 0.5s;
+}
+
+.navbar--wrong {
+  background-color: #af0000 !important;  
+  transition: all 0.5s;
 }
 
 .gridContainer {
-  height: calc(100vh - 70px); 
+  height: calc(100vh - 150px); 
   width: 100%;
   display: flex;
   align-items: center;       
   justify-content: center;   
+}
+
+.button {
+  font-size: 2.5rem !important;
+  width: 850px;
+  background-color: #2C2C2C !important;
+  color: white;
+  position: relative;
+  top: -80px;
+  border: none;
 }

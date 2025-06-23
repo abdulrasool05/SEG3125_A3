@@ -9,9 +9,27 @@ import React from "react"
 function App() {
   const [isInGame, setIsInGame] = React.useState(false)
 
+  const [chosenDifficulty, setChosenDifficulty] = React.useState("EASY")
+  const [chosenMode, setChosenMode] = React.useState("NUMBERS")
+
   return (
     <>
-      {isInGame ? <Game isInGame={isInGame} setIsInGame={setIsInGame}/> : <Home isInGame={isInGame} setIsInGame={setIsInGame}/>}
+      {isInGame ? 
+        <Game
+          chosenDifficulty={chosenDifficulty}
+          chosenMode={chosenMode}
+          isInGame={isInGame} 
+          setIsInGame={setIsInGame}
+        /> : 
+        <Home
+          chosenDifficulty={chosenDifficulty}
+          setChosenDifficulty={setChosenDifficulty}
+          chosenMode={chosenMode}
+          setChosenMode={setChosenMode}
+          isInGame={isInGame} 
+          setIsInGame={setIsInGame}
+        />
+      }
     </>
   );
 }

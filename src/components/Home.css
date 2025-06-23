@@ -3,11 +3,29 @@
 }
 
 .hero {
-    background-color: aqua;
+    background-color: #710E92;
 }
 
 .hero-text {
-    font-size: 128px;
+    font-size: 184px;
+    color: white;
+    letter-spacing: 15px;
+}
+
+.play--descriptor-label {
+  font-size: 5rem !important;
+  width: 850px;
+  background-color: #2C2C2C !important;
+}
+
+.how--to--play-label {
+  font-size: 2.5rem !important;
+  width: 850px;
+  background-color: #2C2C2C !important
+}
+
+.how-to-play-text {
+  font-size: 1.4rem;
 }
 
 .option--radio {
@@ -17,11 +35,11 @@
   display: flex;
 }
 .option--label {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: white;
-  background-color: black;
-  padding-inline: 25px;
+  background-color: #2C2C2C;
+  padding-inline: 30px;
   padding-block: 5px;
   margin: 10px;
   border-radius: 8px;
@@ -34,4 +52,8 @@
 .option--label-selected {
     background-color: #439800;
     border-color: #027200;
+}
+
+.option--descriptor {
+  font-size: 48px;
 }

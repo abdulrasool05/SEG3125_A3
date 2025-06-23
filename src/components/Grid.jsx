@@ -7,12 +7,24 @@ export default function Grid({
   selectedIndexes,
   onSquareClick,
   isPreview,
+  selectedSquaresAmount, 
+  hasWon,
+  hasLost
 }) {
+
+  let bootstrapColStr;
+
+  if (selectedSquaresAmount == 9) {
+    bootstrapColStr = "col-4"
+  } else if (selectedSquaresAmount == 16) {
+    bootstrapColStr = "col-3"
+  } 
+
   return (
     <div className="container gridContainer">
       <div className="row gx-0">
         {numbers.map((num, idx) => (
-          <div className="col-4 d-flex justify-content-center test" key={idx}>
+          <div className={bootstrapColStr + " d-flex justify-content-center test"} key={idx}>
             <Square
               number={num}
               isSelected={!!selectedIndexes.find((sel) => sel.index === idx)}
@@ -21,6 +33,8 @@ export default function Grid({
                 selectedIndexes.find((sel) => sel.index === idx)?.isCorrect
               }
               isPreview={isPreview}
+              hasWon={hasWon}
+              hasLost={hasLost}
             />
           </div>
         ))}

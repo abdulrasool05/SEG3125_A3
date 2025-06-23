@@ -8,6 +8,8 @@ export default function Square({
   onClick,
   isCorrect,
   isPreview,
+  hasWon,
+  hasLost
 }) {
   useEffect(() => {
     console.log(isCorrect);
@@ -22,7 +24,7 @@ export default function Square({
             ? isCorrect
               ? "selected correctSquare"
               : "selected incorrectSquare"
-            : "unselected"
+            : hasWon ? "unselected--correct" : hasLost ? "unselected--wrong" : "unselected" 
         }`}
         onClick={onClick}
       >
